@@ -1,0 +1,182 @@
+page-sendfeed {
+   .swiper-pagination-bullets {
+    left: none !important;
+    bottom: none !important;
+    width: none !important;
+}
+
+
+    ion-header{
+        height: 30vh;
+        #profile-name{
+            position: relative;
+            top: -2.5em; /* 40/16 */
+            left: 41%;
+            color: color($colors, light);;
+        }
+         #Block-Button{
+                font-size: 1.25em; /* 20/16 */
+                float: right;
+                top: -2.9375em; /* 47/16 */
+                background-color: transparent;
+                color: white;
+        }
+
+
+        .profile-pic{
+            // margin: -1.25em 0em 0.3125em 3.75em; /* 20/16 */ /* 0/16 */ /* 5/16 */ /* 60/16 */
+    //             margin-top: -1.25em; /* 20/16 */
+    // margin-bottom: 0.3125em; /* 5/16 */
+            width: 10vh; /* 85/16 */
+            height: 10vh; /* 85/16 */
+            object-fit: cover;
+            border-radius: 4.375em; /* 70/16 */
+            position: relative;
+            // top: 2.5em; /* 40/16 */
+            // left: -1.875em /* 30/16 */
+            left: 3vh;
+            top: -1vh;
+        }
+
+        .profile-name{
+            color: color($colors, light);
+            margin-top: 0;
+            font-size: 1.5em;
+            position: relative;
+            // top: 1.5em; /* 40/16 */
+        }
+        .username{
+            position:relative;
+            // top:1.3em; /* 30/16 */
+            color: color($colors, light);
+        }
+
+            .profile-container{
+            position: relative;
+            top: -5vh; /* 50/16 */
+            text-align: center;
+            z-index: 0;
+
+        }
+            .profile-blur {
+          position: fixed;
+          left: 0;
+          right: 0;
+          z-index: -1;
+          display: block;
+          background-image: url("https://firebasestorage.googleapis.com/v0/b/eoko-cc928.appspot.com/o/profiles%2Fdefault_avatar.jpg?alt=media&token=761a4187-2508-44fb-994c-9bd0b6842181");
+          width: 150%;
+          height: 28vh; /* 230/16 */
+          background-repeat: no-repeat;
+        background-size:cover !important;
+        background-position-y: 20% !important;
+
+
+          -webkit-filter: blur(0.625em); /* 10/16 */
+          -moz-filter: blur(0.625em); /* 10/16 */
+          -o-filter: blur(0.625em); /* 10/16 */
+          -ms-filter: blur(0.625em); /* 10/16 */
+          filter: blur(0.625em); /* 10/16 */
+        }
+        
+            
+    }
+
+
+    ion-content{
+        .review-or-feedback{
+            border-radius: 3rem;
+        }
+
+    textarea{
+        width: 50vh !important;
+        height: 40vh !important; /* 200/16 */
+        border: none;
+        border-radius: 0.3125rem; /* 5/16 */
+    }
+        .fixed-content{
+            margin-top: 192px;
+            .scroll-content{
+                margin-top: 176px !important;
+            }
+        }
+        position: relative;
+        // top: -3vh; /* 20/16 */
+            .text-inputs{
+            color: black;
+            padding-left: 3.75rem; /* 60/16 */
+            padding-right: 2.9375rem; /* 47/16 */
+
+
+            ion-input{
+                margin-bottom: 0.625rem; /* 10/16 */
+                font-size: 2.5rem;
+                text-align: center;
+                border: 0;
+                 outline: 0;
+                 background: transparent;
+                 border-bottom: 0.0625rem solid color($colors, primary); /* 1/16 */
+                 margin-bottom: 1.625rem !important; /* 26/16 */
+                 position: relative;
+            }
+            button{
+                margin-top: -14.4375rem; /* 231/16 */
+                margin-left: 7.5rem; /* 120/16 */
+                background-position: center;
+                transition: background 0.8s;
+            }
+        }
+        .go-back-button {
+              background-position: center;
+              transition: background 0.8s;
+        }
+        .go-back-button:active {
+              color: white;
+              background-color: color($colors, primary);
+              background-size: 100%;
+              transition: background 0s;
+        }
+        .go-back-button{
+            position: fixed;
+            margin-left: -20rem; /* 190/16 */
+            margin-top: -18rem; /* 150/16 */
+            background-color: transparent;
+            color: black;
+            ion-icon{
+                font-size: 5rem;
+            }
+        }
+        #lastSlide{
+            button{
+                margin-left: -38rem;
+                margin-top: -7rem;
+                background-color: transparent;
+                color: gray;
+            }
+        }
+        .sendButton{
+            margin-left: 29rem !important;
+            font-size: 4rem;
+            margin-top: 0rem !important;
+            height: 3rem;
+        }
+    input::-webkit-input-placeholder {
+        font-size: 2.3rem;
+    }
+    .lightning{
+        ion-icon{
+            font-size: 3.5rem;
+           color: color($colors, primary);
+        }
+    }
+    #submit{
+        margin-left: 0rem !important; /* 0/16 */
+        margin-top: 0rem !important; /* 0/16 */
+    }
+.toolbar-ios-light .toolbar-title-ios, .toolbar-ios-light .bar-button-clear-ios, .toolbar-ios-light .bar-button-default-ios {
+    color: #fff;
+}
+
+}
+
+}

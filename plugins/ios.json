@@ -1,0 +1,63 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-advanced-http": {
+      "PACKAGE_NAME": "com.dreality.listenup"
+    },
+    "cordova-plugin-camera": {
+      "CAMERA_USAGE_DESCRIPTION": " ",
+      "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
+      "PACKAGE_NAME": "com.dreality.listenup"
+    },
+    "cordova-plugin-customurlscheme": {
+      "URL_SCHEME": "com.dreality.listenup",
+      "PACKAGE_NAME": "com.dreality.listenup"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.dreality.listenup"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.dreality.listenup"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.dreality.listenup"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "com.dreality.listenup"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.dreality.listenup"
+    },
+    "cordova-plugin-linkedin": {
+      "APP_ID": "7818gxiruyce0r",
+      "PACKAGE_NAME": "com.dreality.listenup"
+    },
+    "cordova-plugin-safariviewcontroller": {
+      "PACKAGE_NAME": "com.dreality.listenup"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.dreality.listenup"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.dreality.listenup"
+    },
+    "phonegap-plugin-barcodescanner": {
+      "CAMERA_USAGE_DESCRIPTION": " ",
+      "PACKAGE_NAME": "com.dreality.listenup"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.dreality.listenup"
+    },
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.dreality.listenup"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "tab_copy",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/authorization",
+      "proxyUrl": "'https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=7818gxiruyce0r&redirect_uri=http://localhost/callback&state=Listenuptesting&r_basicprofile%20r_emailaddress"
+    }
+  ]
+}

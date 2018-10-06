@@ -1,0 +1,34 @@
+page-message-detail {
+	ion-content{
+		    background: $app-background;
+	}
+	ion-header{
+		#flag-Button{
+            font-size: 20px;
+            float: right;
+            top: -47px;
+        }
+	}
+    .name-title{
+        color: color($colors, gray) !important;
+    }
+    ion-card {
+        border-radius: 1em !important;
+    }
+    .message-sender {
+        background-color:#ffff;
+        width: 80%;
+        margin: auto;
+        color:#000
+
+    }
+
+		.message-receiver{
+			background-color: color($colors,primary);
+			width: 80%;
+			margin: right;
+			color:#fff
+
+		}
+
+}

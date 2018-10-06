@@ -1,0 +1,32 @@
+page-message {
+      ion-content{
+    background: $app-background;
+}
+    .img-loaded + ion-spinner {
+        display:none;
+      }
+    .list-ios > .item-block:last-child .item-inner, .list-ios > .item-wrapper:last-child .item-block .item-inner {
+        padding-top: 5px;
+    }
+    .toolbar-ios-primary .searchbar-ios .searchbar-input {
+        color: color($colors,gray);
+    }
+    
+    .chat-list{
+      h2{
+        margin-top: 0rem !important;
+      }
+    }
+
+  //   h2{
+  //   			color: color($colors,primary);
+  //   }
+  //   .menu-button{
+  //   background-color: white;
+  //   color: #3a3c3f;
+  //   height: 20px;
+  //   width: 80px;
+  //   margin: auto;
+  // }
+  
+}

@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="primary"> 
+   <!--  <ion-buttons>
+      <button ion-button icon-only menuToggle class = "menu-button" side="left" class = "menu-button">
+        Listen Up
+      </button>
+    </ion-buttons> -->
+  <ion-toolbar color = "white">
+  <ion-searchbar autocomplete autocorrect placeholder = "Search messages, enter either email or username" (ionInput) = "searchMessage($event)"></ion-searchbar>
+  </ion-toolbar>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list class = "chat-list">
+    <ng-container *ngFor="let chat of chatArray">
+       <ion-item-sliding>
+        <ion-item  (click)="goToChatDetail(chat.payload.val().chatID, chat.otherInfo.id)">
+          <ion-avatar item-start><ion-img src="{{chat.otherInfo?.photourl}}"></ion-img></ion-avatar>
+          <h2>{{chat.otherInfo?.firstname}} {{chat.otherInfo?.lastname}}</h2>
+          <p>{{chat.payload.val().lastText}}</p>
+          <p item-right>{{chat.payload.val().timestamp | date:'EEE hh:mm a'}}</p>
+          </ion-item>
+          <ion-item-options>
+                <button ion-button (click) = "deleteChat(chat)">delete</button>
+          </ion-item-options>
+          </ion-item-sliding>
+    </ng-container>
+  </ion-list>
+</ion-content>

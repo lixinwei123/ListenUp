@@ -1,0 +1,141 @@
+<ion-header >
+
+		<div class ="profile-blur" [style.background]="'url('+ receivePho +')'" ></div>
+
+		<ion-navbar color = "light" transparent>
+		</ion-navbar>
+		<button ion-button small id = "Block-Button" (click) = "blockUser()">
+				<ion-icon name="ios-flag"></ion-icon>
+		</button>
+	
+	<!-- profile pic -->
+	<h2 id = "profile-name"> </h2>
+	<div class = "profile-container">
+
+			<img class="profile-pic" [src] = "receivePho">
+		 <h1 class="profile-name">{{targetFirst}} {{targetLast}}</h1>
+		 <p class = "username"> @{{param.username}}</p>
+ 	</div>
+
+</ion-header>
+
+
+
+<ion-content class="has-header">
+	<ion-slides>
+  <ion-slide>
+  	<ion-grid>
+  		<ion-row>
+  			<ion-col>
+  				<ion-label>Anonymous?</ion-label>
+  			</ion-col>
+  			<ion-col>
+  				<ion-toggle [(ngModel)] = "annon" ></ion-toggle>
+  			</ion-col>
+  		</ion-row>
+  		<ion-row>
+  			<ion-col>
+  					<button ion-button (click) = "goToSlide(1,1);" class = "review-or-feedback"> 
+					feedback(private)<ion-icon name="ios-lock-outline" style = " display: inline;"></ion-icon>
+					 
+				</button>
+  			</ion-col>
+  			<ion-col>
+  				 <button ion-button *ngIf = "!annon" (click) = "goToSlide(1,0);" class = "review-or-feedback" color = "blue">&nbsp;review(public) &nbsp;
+				 <ion-icon name="md-globe" style = "display: inline;"></ion-icon> 
+				</button>
+  			</ion-col>
+  		</ion-row>
+  	</ion-grid>
+   <ion-item no-lines>
+		
+		</ion-item>
+
+<div>
+<h3 >Reviews </h3>
+<ion-list no-lines>
+	<ion-item>
+		<ion-card>
+			<ion-icon [name]="oneLight"></ion-icon> 
+			<ion-icon [name]="twoLight"></ion-icon> 
+			<ion-icon [name]="threeLight"></ion-icon> 
+			<ion-icon [name]="fourLight"></ion-icon> 
+			<ion-icon [name]="fiveLight"></ion-icon> 
+			<p>Fantastic experience, great pianist, a must see!</p>
+			<div> <ion-icon name = ""></ion-icon></div>
+		</ion-card>
+	</ion-item>
+	<ion-item>
+		<ion-card>
+			Good jobbadandlanflasnflasndfaslndflasnfdla
+		</ion-card>
+	</ion-item>
+		<ion-item>
+		<ion-card>
+			Good jobbadandlanflasnflasndfaslndflasnfdla
+		</ion-card>
+	</ion-item>
+		<ion-item>
+		<ion-card>
+			Good jobbadandlanflasnflasndfaslndflasnfdla
+		</ion-card>
+	</ion-item>
+		<ion-item>
+		<ion-card>
+			Good jobbadandlanflasnflasndfaslndflasnfdla
+		</ion-card>
+	</ion-item>
+</ion-list>
+<!-- <ion-card>
+	<ion-card-content>
+		Kevin is a fantastic pianist. I went to listen to his recital the other day and he played Chopin flawlessly. He indeed is one of the greatest pianist in the 20th century. Definitely recommend goto one of his recitals!He played Chopin's 2nd concerto and Ballade No.1 He is fantastic. He is a great guy as well!
+	</ion-card-content>
+</ion-card> -->
+</div>
+  </ion-slide>
+
+  <ion-slide>
+  	<button ion-button class = "go-back-button" (click) = "goBackSlide(0);">	<ion-icon name = "ios-arrow-back"></ion-icon></button>
+	<div class = "text-inputs">
+		<ion-input floating autocorrect  type = "text"[(ngModel)] = "mesData.title" placeholder = "Title, maximum 100 characters" maxlength="100">
+		</ion-input> <button ion-button *ngIf = "mesData.title" class = "go-back-button" (click) = "goToSlide(2);" style = "margin-top:-25rem; margin-left: 14.5rem;"> <ion-icon name = "ios-arrow-forward-outline"> </ion-icon> </button>
+	</div>
+  </ion-slide>
+
+  <ion-slide id = "lastSlide">
+		<textarea type="text" [(ngModel)] = "mesData.message" class = "messageBox" placeholder="Send your candid feedback/review here! Maximum 5000 charaxt" maxlength="5000"></textarea>
+		<button ion-button class = "go-back-button" (click) = "goBackSlide(1);">	<ion-icon name = "ios-arrow-back"></ion-icon></button>
+		<div class = "lightning" *ngIf = "type == 'review'">
+		<ion-icon [name]="oneStar" (click)  = "clickStar('one')"></ion-icon> 
+		<ion-icon [name]="twoStar" (click)  = "clickStar('two')"></ion-icon> 
+		<ion-icon [name]="threeStar" (click)  = "clickStar('three')"></ion-icon> 
+		<ion-icon [name]="fourStar" (click)  = "clickStar('four')"></ion-icon> 
+		<ion-icon [name]="fiveStar" (click)  = "clickStar('five')"></ion-icon> 
+		</div>
+		<div style = "text-align: center; margin-top:10px;">
+<!-- 		<button *ngIf = "mesData.message" ion-button color = "primary" id = "submit" (click) = "sendMessage()" >
+		send message
+		</button> -->
+		<button ion-button *ngIf = "mesData.message" (click) = "sendMessage();" class = "sendButton"> <ion-icon name = "md-send"> </ion-icon> </button>
+		
+		</div>
+  </ion-slide>
+
+</ion-slides>
+<!-- Anonymous Toggle -->
+
+<!--  feedback in textbox and title inputs -->
+
+<!-- <div class = "text-inputs">
+		<ion-input floating autocorrect  type = "text"
+						[(ngModel)] = "mesData.title" 
+						placeholder = "Title">
+		</ion-input>
+
+		<textarea type="text" [(ngModel)] = "mesData.message"></textarea>
+</div> -->
+
+<!-- sending feedback button -->
+
+
+</ion-content>

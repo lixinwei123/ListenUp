@@ -1,0 +1,29 @@
+header-menu {
+.toolbar-background {
+    border: none;
+}
+	#email{
+		color: color($colors,primary) !important;
+	}
+	// .listItem{
+	// 	background-color: color($colors,gray) !important;
+	// }
+	ion-list{
+		// position: relative;
+		// top: -200px;
+		ion-item{
+		padding-left: 50px !important;
+	}
+	.listItem{
+		ion-icon{
+			display: inline-block;
+    		font-size: 1.8em;
+    		position: fixed;
+    		left: 8px;
+    		top: 4px;
+		}
+		  
+	}
+	}
+
+}

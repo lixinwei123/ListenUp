@@ -1,0 +1,98 @@
+page-profile {
+  ion-content{
+    background: $app-background;
+}
+  
+  .profile-blur {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/eoko-cc928.appspot.com/o/profiles%2Fdefault_avatar.jpg?alt=media&token=761a4187-2508-44fb-994c-9bd0b6842181");
+    width: 100%;
+    height: 230px;
+    background-repeat: no-repeat;
+  background-size:cover !important;
+  background-position-y: 20% !important;
+
+
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+  }
+	ion-navbar{
+		height: 50px;
+    color: #3a3c3f;
+
+	}
+
+	 .profile-photo{
+		margin: auto;
+		width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 70px;
+    display: block;
+    top: 20px !important;
+	}
+
+	.first-still{
+		margin: auto;
+		display: block;
+	}
+
+  h2{
+  	text-align: center;
+    color: #3a3c3f;
+  }
+
+  h1{
+  	@extend h2;
+  	font-size: 2.5rem;
+  }
+
+  .profile{
+     border-radius: 50%;
+  }
+
+  #A1{
+  	// position: relative;
+  	// top: 10px;
+    color: #3a3c3f;
+  	// background-color: color($colors,primary);
+  	width: 80%;
+  	margin: auto;
+  	// left: 20%;
+  }
+  #Introduction{
+    text-align: center;
+    font-size: 18px;
+  }
+  #ur-code{
+    position: relative;
+    top: -60px;
+  }
+    .menu-button{
+    font-size: 2em;
+    padding-bottom: 10px;
+    position: fixed;
+    top: -50px;
+    ion-icon{
+    color: #3a3c3f;
+    }
+
+}
+  
+	.ur-code{
+	  height:auto;
+		width:80px;
+		display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+	 width: 50%;
+
+	}
+}
